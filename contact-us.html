@@ -163,94 +163,27 @@
             <span>Contact Us<img src="assets/img/section-shape.png" alt="Image"></span>
             <h2>Get In Touch With Us</h2>
           </div>
-          <div class="row gx-5 justify-content-center">
-            <div class="col-lg-8">
-              <div class="contact-form">
-                <form class="form-wrap" id="contactForm" method="post" action='mailer.php'>
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6">
-                      <div class="form-group">
-                        <input type="text" name="name" placeholder="Name*" id="name" required
-                          data-error="Please enter your name">
-                        <div class="help-block with-errors"></div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6">
-                      <div class="form-group">
-                        <input type="email" name="email" id="email" required placeholder="Email*"
-                          data-error="Please enter your email">
-                        <div class="help-block with-errors"></div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6">
-                      <div class="form-group">
-                        <input type="number" name="phone" id="phone" required placeholder="Phone*"
-                          data-error="Please enter your phone">
-                        <div class="help-block with-errors"></div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6">
-                      <div class="form-group">
-                        <input type="text" name="subject" placeholder="Subject*" id="msg_subject" required
-                          data-error="Please enter your subject">
-                        <div class="help-block with-errors"></div>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group v1">
-                        <textarea name="message" id="message" placeholder="Your Messages.." cols="30" rows="10" required
-                          data-error="Please enter your message"></textarea>
-                        <div class="help-block with-errors"></div>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <button type="submit" class="btn style1 w-100 d-block">Send Message</button>
-                    </div>
+          <div class="row">
+            <div class="col-md-6 mobile-margin-b72">
+              <div id="contact-holder-home">
+                <form method="post" action='mailer.php'>
+                  <div class="contact-holder">
+                    <input name="name" value="" size="40" class="comm-field" aria-required="true" aria-invalid="false"
+                      placeholder="Name" type="text">
+                    <input name="email" value="" size="40" class="comm-field" aria-required="true" aria-invalid="false"
+                      placeholder="Email" type="email">
+                    <input name="phone" value="" size="40" class="comm-field" aria-invalid="false" placeholder="Phone"
+                      type="text">
                   </div>
+                  <!-- /contact-holder -->
+                  <p><textarea name="message" cols="40" rows="5" id="msg-contact" aria-required="true"
+                      aria-invalid="false" placeholder="Your Message"></textarea></p>
+                  <p><input value="Book Now" id="submit-contact" type="submit"></p>
                 </form>
               </div>
+              <div id="output-contact"></div>
             </div>
-            <div class="col-lg-4">
-              <div class="contact-item-wrap">
-                <div class="contact-item">
-                  <h3>Our Address</h3>
-                  <p>Silver Oak University, Ahmedabad, Gujarat</p>
-                </div>
-                <div class="contact-item">
-                  <h3>Email Address</h3>
-                  <a href="#"><span class="__cf_email__">info@lorem.com</span></a>
-                </div>
-                <div class="contact-item">
-                  <h3>24/7 Support</h3>
-                  <a href="tel:+919662442160">+91 9662442160</a>
-                </div>
-                <div class="contact-item">
-                  <h3>Follow us</h3>
-                  <ul class="social-profile style2 list-style">
-                    <li>
-                      <a href="#">
-                        <i class="ri-facebook-fill"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="ri-twitter-fill"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="ri-instagram-line"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="ri-linkedin-fill"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+            <!-- /col-md-6 -->
           </div>
         </div>
     </div>
