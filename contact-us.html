@@ -104,7 +104,7 @@
                   <a href="./" class="nav-link">Home </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Research & Reports </a>
+                  <a href="research-report.html" class="nav-link">Research & Reports </a>
                 </li>
                 <li class="nav-item">
                   <a href="quiz.html" class="nav-link">Quiz</a>
@@ -116,7 +116,8 @@
                   <a href="contact-us.html" class="nav-link">Contact Us</a>
                 </li>
                 <li class="nav-item d-lg-none">
-                  <a href="#" class="nav-link btn style1">Donate Now</a>
+                  <a href="https://www.cry.org/donate-to-educate-girls/?utm_source=google&utm_medium=cpc&utm_campaign=61420&utm_term=donate%20for%20girls&utm_content=search+text+ads+girl+child+broad+gen+t1&campaign_Name=GirlChild&gad_source=1"
+                    target="_blank" class="nav-link btn style1">Donate Now</a>
                 </li>
               </ul>
               <div class="other-options md-none">
@@ -128,7 +129,8 @@
                                         </div>
                                     </div> -->
                 <div class="option-item">
-                  <a href="#" class="btn style1">Donate Now</a>
+                  <a href="https://www.cry.org/donate-to-educate-girls/?utm_source=google&utm_medium=cpc&utm_campaign=61420&utm_term=donate%20for%20girls&utm_content=search+text+ads+girl+child+broad+gen+t1&campaign_Name=GirlChild&gad_source=1"
+                    target="_blank" class="btn style1">Donate Now</a>
                 </div>
               </div>
             </div>
@@ -164,7 +166,7 @@
           <div class="row gx-5 justify-content-center">
             <div class="col-lg-8">
               <div class="contact-form">
-                <form class="form-wrap" id="contactForm">
+                <form class="form-wrap" id="contactForm" method="post" action='mailer.php'>
                   <div class="row">
                     <div class="col-md-6 col-sm-6">
                       <div class="form-group">
@@ -182,14 +184,14 @@
                     </div>
                     <div class="col-md-6 col-sm-6">
                       <div class="form-group">
-                        <input type="email" name="phone" id="phone" required placeholder="Phone*"
+                        <input type="number" name="phone" id="phone" required placeholder="Phone*"
                           data-error="Please enter your phone">
                         <div class="help-block with-errors"></div>
                       </div>
                     </div>
                     <div class="col-md-6 col-sm-6">
                       <div class="form-group">
-                        <input type="text" name="msg_subject" placeholder="Subject*" id="msg_subject" required
+                        <input type="text" name="subject" placeholder="Subject*" id="msg_subject" required
                           data-error="Please enter your subject">
                         <div class="help-block with-errors"></div>
                       </div>
@@ -203,8 +205,6 @@
                     </div>
                     <div class="col-12">
                       <button type="submit" class="btn style1 w-100 d-block">Send Message</button>
-                      <div id="msgSubmit" class="h3 text-center hidden"></div>
-                      <div class="clearfix"></div>
                     </div>
                   </div>
                 </form>
@@ -253,131 +253,132 @@
             </div>
           </div>
         </div>
-      </section>
     </div>
-    <!-- Footer Section Start -->
-    <footer class="footer-wrap">
-      <div class="footer-top">
-        <img src="assets/img/footer-shape-1.png" alt="Image" class="footer-shape-one moveHorizontal" />
-        <img src="assets/img/sun-2.png" alt="Image" class="footer-shape-two rotate" />
-        <img src="assets/image/bird-1.png" alt="Image" class="footer-shape-three flyLeft" />
-        <div class="container">
-          <div class="row pt-100 pb-75">
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 pe-xl-5">
-              <div class="footer-widget">
-                <a href="#" class="footer-logo">
-                  <img src="assets/image/logo-white.svg" alt="Image" />
-                </a>
-                <p class="comp-desc">
-                  Let's unite in action to dismantle barriers and ensure equality flourishes in every corner of society,
-                  empowering all to thrive.
-                </p>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 ps-xl-5 ps-lg-4 ps-md-5">
-              <div class="footer-widget">
-                <h3 class="footer-widget-title">Explore</h3>
-                <ul class="footer-menu list-style">
-                  <li>
-                    <a href="#"> Research & Reports </a>
-                  </li>
-                  <li>
-                    <a href="quiz.html"> Quiz </a>
-                  </li>
-                  <li>
-                    <a href="faq.html"> FAQ </a>
-                  </li>
-                  <li>
-                    <a href="contact-us.html"> Contact Us </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
-              <div class="footer-widget">
-                <h3 class="footer-widget-title">Other Pages</h3>
-                <ul class="footer-menu list-style">
-                  <li>
-                    <a href="violence.html">Gender-based Violence</a>
-                  </li>
-                  <li>
-                    <a href="child-marriage.html">Child Marriage </a>
-                  </li>
-                  <li>
-                    <a href="equality-sports.html"> In Sports</a>
-                  </li>
-                  <li>
-                    <a href="access-to-education.html">Access to Education</a>
-                  </li>
-                  <li>
-                    <a href="mens-role.html">Men's Role </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 ps-md-5">
-              <div class="footer-widget">
-                <h3 class="footer-widget-title">Official Info</h3>
-                <ul class="contact-info list-style">
-                  <li>
-                    <i class="flaticon-pin"></i>
-                    <h6>Location</h6>
-                    <p>Silver Oak University</p>
-                  </li>
-                  <li>
-                    <i class="flaticon-mail"></i>
-                    <h6>Email</h6>
-                    <a href="#"><span class="">info@lorem.com</span></a>
-                  </li>
-                  <li>
-                    <i class="flaticon-phone-call"></i>
-                    <h6>Phone</h6>
-                    <a href="#">+91 9662442160</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-8 col-md-6 col-sm-7">
-              <p class="copyright-text">
-                <i class="ri-copyright-line"></i>Lorem, ipsum.
-                <a href="https://hibotheme.com/">LOREN</a>
+    </section>
+  </div>
+  <!-- Footer Section Start -->
+  <footer class="footer-wrap">
+    <div class="footer-top">
+      <img src="assets/img/footer-shape-1.png" alt="Image" class="footer-shape-one moveHorizontal" />
+      <img src="assets/img/sun-2.png" alt="Image" class="footer-shape-two rotate" />
+      <img src="assets/image/bird-1.png" alt="Image" class="footer-shape-three flyLeft" />
+      <div class="container">
+        <div class="row pt-100 pb-75">
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 pe-xl-5">
+            <div class="footer-widget">
+              <a href="#" class="footer-logo">
+                <img src="assets/image/logo-white.svg" alt="Image" />
+              </a>
+              <p class="comp-desc">
+                Let's unite in action to dismantle barriers and ensure equality flourishes in every corner of society,
+                empowering all to thrive.
               </p>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-5">
-              <ul class="social-profile style1 list-style">
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 ps-xl-5 ps-lg-4 ps-md-5">
+            <div class="footer-widget">
+              <h3 class="footer-widget-title">Explore</h3>
+              <ul class="footer-menu list-style">
                 <li>
-                  <a href="https://facebook.com/">
-                    <i class="ri-facebook-fill"></i>
-                  </a>
+                  <a href="research-report.html"> Research & Reports </a>
                 </li>
                 <li>
-                  <a href="https://twitter.com/">
-                    <i class="ri-twitter-fill"></i>
-                  </a>
+                  <a href="quiz.html"> Quiz </a>
                 </li>
                 <li>
-                  <a href="https://instagram.com/">
-                    <i class="ri-instagram-line"></i>
-                  </a>
+                  <a href="faq.html"> FAQ </a>
                 </li>
                 <li>
-                  <a href="https://linkedin.com/">
-                    <i class="ri-linkedin-fill"></i>
-                  </a>
+                  <a href="contact-us.html"> Contact Us </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+            <div class="footer-widget">
+              <h3 class="footer-widget-title">Other Pages</h3>
+              <ul class="footer-menu list-style">
+                <li>
+                  <a href="violence.html">Gender-based Violence</a>
+                </li>
+                <li>
+                  <a href="child-marriage.html">Child Marriage </a>
+                </li>
+                <li>
+                  <a href="equality-sports.html"> In Sports</a>
+                </li>
+                <li>
+                  <a href="access-to-education.html">Access to Education</a>
+                </li>
+                <li>
+                  <a href="mens-role.html">Men's Role </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 ps-md-5">
+            <div class="footer-widget">
+              <h3 class="footer-widget-title">Official Info</h3>
+              <ul class="contact-info list-style">
+                <li>
+                  <i class="flaticon-pin"></i>
+                  <h6>Location</h6>
+                  <p>Silver Oak University</p>
+                </li>
+                <li>
+                  <i class="flaticon-mail"></i>
+                  <h6>Email</h6>
+                  <a href="#"><span class="">info@lorem.com</span></a>
+                </li>
+                <li>
+                  <i class="flaticon-phone-call"></i>
+                  <h6>Phone</h6>
+                  <a href="#">+91 9662442160</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- Footer Section End -->
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8 col-md-6 col-sm-7">
+            <p class="copyright-text">
+              <i class="ri-copyright-line"></i>Lorem, ipsum.
+              <a href="https://hibotheme.com/">LOREN</a>
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-5">
+            <ul class="social-profile style1 list-style">
+              <li>
+                <a href="https://facebook.com/">
+                  <i class="ri-facebook-fill"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/">
+                  <i class="ri-twitter-fill"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://instagram.com/">
+                  <i class="ri-instagram-line"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/">
+                  <i class="ri-linkedin-fill"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section End -->
   </div>
   <!-- Page Wrapper End -->
 

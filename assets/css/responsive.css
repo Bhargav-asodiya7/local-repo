@@ -1677,4 +1677,10 @@
   .quiz-container {
     width: 100%;
   }
+  .header-wrap .header-top{
+    display: none;
+  }
+  .hero-wrap {
+    margin-top: 70px;
+}
 }

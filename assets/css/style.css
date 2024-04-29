@@ -5973,3 +5973,13 @@ article {
 .clrblue{
   color: #007bff !important;
 }
+.quiz-read{
+  display: flex;
+  justify-content: center;
+}
+.quiz-read a{
+  margin-bottom: 30px;
+}
+.event-desc p{
+  text-align: justify;
+}
